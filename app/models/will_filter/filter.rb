@@ -705,7 +705,7 @@ module WillFilter
           end
         end
 
-        WillFilter::Filter.where(conditions)
+        WillFilter::Filter.where(conditions).order("id DESC")
       end
     end
 
